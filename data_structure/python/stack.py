@@ -26,7 +26,7 @@ class Stack:
 
     # print(stack)  출력: [1, 2, 3]
     def __str__(self):
-        return str(self.items
+        return str(self.items)
 
     # print(repr(stack)) 출력 Stack([1, 2, 3])
     def __repr__(self):
