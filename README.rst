@@ -12,7 +12,7 @@ Data Structure
 - Stack
 
 Problem Solving
----------
+---------------
 
 - Programmers
 - HackerRank
