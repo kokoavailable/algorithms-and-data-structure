@@ -1,14 +1,15 @@
 2024 05 17
+===========
 
-# algorithm
+Algorithm
+---------
 
-programmers
+- Programmers
+- HackerRank
+- LeetCode
 
-hackerrank
+Data Structure
+--------------
 
-leetcode
-
-# data structure
-
-list
-stack
+- List
+- Stack
