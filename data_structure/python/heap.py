@@ -26,6 +26,8 @@ def heap_sort(arr):
   n = len(arr)
   build_max_heap(arr)
 
+  # 최대힙을 빌드한 이후 가장 큰 값을 배열의 끝으로 이동시키고 남는 부분을 다시 최대 힙으로 복원하는 과정을 반복하며 오름차순 정렬한다.
+  # 최소힙의 경우에는 반대.
   for i in range(n-1, 0, -1):
     arr[i], arr[0] = arr[0], arr[i]
     max_heapify(arr, i, 0)
@@ -55,7 +57,6 @@ def build_min_heap(arr):
 def heap_sort_min(arr):
   n = len(arr)
   build_min_heap(arr)
-
   for i in range(n-1, 0, -1):
     arr[i], arr[0] = arr[0], arr[i]
     min_heapify(arr, i, 0)
