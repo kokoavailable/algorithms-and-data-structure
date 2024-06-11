@@ -3,13 +3,17 @@
 
 Algorithm
 ---------
-
+- Heap
+- Merge sort
 
 Data Structure
 --------------
 
 - List
 - Stack
+- Queue
+- Deque
+- Heap
 
 
 Problem Solving
