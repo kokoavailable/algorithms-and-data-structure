@@ -19,3 +19,4 @@ Data Structure
 - HackerRank
 - LeetCode
    **0933-number-of-recent-calls** `queue` ✅
+   **0649-dota2-senate** `queue` ✅
