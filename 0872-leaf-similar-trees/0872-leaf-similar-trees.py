@@ -13,7 +13,6 @@ class Solution(object):
         """
         
         def getLeafValues(root):
-            
             leaf_values = []
 
             def dfs(node):
