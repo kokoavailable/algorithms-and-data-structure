@@ -5,8 +5,8 @@ Algorithm
 ---------
 - Heap
 - Merge sort
-- Tree (BFS)
-- Tree (DFS)
+- Tree (BFS, DFS)
+- Graph (BFS, DFS)
 
 Data Structure
 --------------
@@ -16,7 +16,8 @@ Data Structure
 - Queue
 - Deque
 - Heap
-- Tree (BFS, DFS)
+- Tree
+- Graph
 
 
 Problem Solving
