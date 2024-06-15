@@ -7,6 +7,7 @@ Algorithm
 - Merge sort
 - Tree (BFS, DFS)
 - Graph (BFS, DFS)
+- DP
 
 Data Structure
 --------------
