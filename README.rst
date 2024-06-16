@@ -8,6 +8,7 @@ Algorithm
 - Tree (BFS, DFS)
 - Graph (BFS, DFS)
 - DP (tabulation, memoization)
+- Backtracking
 
 Data Structure
 --------------
