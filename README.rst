@@ -20,6 +20,7 @@ Data Structure
 - Heap
 - Tree
 - Graph
+- Trie
 
 
 Problem Solving
