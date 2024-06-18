@@ -21,6 +21,7 @@ Data Structure
 - Tree
 - Graph
 - Trie
+- LinkedList
 
 
 Problem Solving
