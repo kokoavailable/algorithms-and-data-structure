@@ -14,6 +14,7 @@ Data Structure
 --------------
 
 - List
+- LinkedList
 - Stack
 - Queue
 - Deque
@@ -21,7 +22,6 @@ Data Structure
 - Tree
 - Graph
 - Trie
-- LinkedList
 
 
 Problem Solving
