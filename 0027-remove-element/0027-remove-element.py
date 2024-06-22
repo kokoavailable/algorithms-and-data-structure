@@ -5,5 +5,11 @@ class Solution(object):
         :type val: int
         :rtype: int
         """
-        for i in range(nums.count(val)):
-            nums.remove(val)
+        index = 0
+        
+        for i in range(len(nums)):
+            if nums[i] != val:
+                nums[index] = nums[i]
+                index += 1
+                
+        return index
