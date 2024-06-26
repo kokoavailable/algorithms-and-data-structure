@@ -4,19 +4,19 @@ class Solution(object):
         :type moves: str
         :rtype: bool
         """
-        current_position = [0, 0]
+        x, y = 0, 0
         
         for move in moves:
             if move == 'L':
-                current_position[0] -= 1
+                x -= 1
             if move == 'R':
-                current_position[0] += 1
+                x += 1
             if move == 'U':
-                current_position[1] += 1
+                y += 1
             if move == 'D':
-                current_position[1] -= 1
+                y -= 1
         
-        return current_position == [0, 0]
+        return x == 0 and y == 0
                 
         
             
