@@ -4,12 +4,9 @@ class Solution(object):
         :type nums: List[int]
         :rtype: None Do not return anything, modify nums in-place instead.
         """
-        if nums == []:
-            return None
+        last_non_zero_found_at = 0
         
-        for number in nums:
-            if number == 0:
-                nums.remove(0)
-                nums.append(0)
-                
-        return nums
+        for current in range(len(nums)):
+            if nums[current] != 0:
+                nums[last_non_zero_found_at], nums[current] = nums[current], nums[last_non_zero_found_at]
+                last_non_zero_found_at += 1
