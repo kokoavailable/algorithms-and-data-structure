@@ -4,7 +4,6 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        
         if nums[0] < nums[-1]:
             for i in range(len(nums) - 1):
                 if not nums[i] <= nums[i+1]:
