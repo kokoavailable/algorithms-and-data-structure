@@ -4,20 +4,12 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        if nums == []:
-            return None
-        
-        if 0 in nums:
-            return 0
-        
-        negative_cnt = 0
+        sign = 1
         
         for num in nums:
-            if num < 0:
-                negative_cnt += 1
-                
-        if negative_cnt % 2 == 0:
-            return 1
-        else:
-            return -1
+            if num == 0:
+                return 0
+            elif num < 0:
+                sign = -sign
         
+        return sign
