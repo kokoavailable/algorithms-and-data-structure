@@ -4,7 +4,7 @@ class Solution:
         n = len(nums)
         closest_sum = float('inf')
         
-        for i in range(n - 2):
+        for i in range(n - 2): 
             if i > 0 and nums[i] == nums[i - 1]:
                 continue
             
@@ -31,5 +31,4 @@ class Solution:
                         
                 else:
                     return current_sum
-                
         return closest_sum
