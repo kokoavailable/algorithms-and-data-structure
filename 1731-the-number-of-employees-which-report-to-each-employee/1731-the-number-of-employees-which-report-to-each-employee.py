@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 
 def count_employees(employees: pd.DataFrame) -> pd.DataFrame:
     reports = employees[~employees['reports_to'].isna()]
@@ -9,7 +8,7 @@ def count_employees(employees: pd.DataFrame) -> pd.DataFrame:
         average_age=('age', 'mean')
     ).reset_index()
     
-    result['average_age'] = np.floor(result['average_age'] + 0.5).astype(int)
+    result['average_age'] = (result['average_age'] + 0.5).astype(int)
     
     result = result.merge(employees[['employee_id', 'name']], left_on='reports_to', right_on='employee_id')
     
