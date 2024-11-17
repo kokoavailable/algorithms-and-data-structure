@@ -2,5 +2,5 @@ from collections import Counter
 
 class Solution:
     def uniqueOccurrences(self, arr: List[int]) -> bool:
-        cnter = Counter(arr)
-        return len(cnter) == len(set(cnter.values()))
+        freq = Counter(arr)
+        return len(freq) == len(set(freq.values()))
