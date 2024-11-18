@@ -4,18 +4,9 @@ class Solution(object):
         :type grid: List[List[int]]
         :rtype: int
         """
-        ls_j = []
-        pair_count = 0
+        row_counter = Counter(tuple(row) for row in grid)
+        col_counter = Counter(tuple(grid[i][j] for i in range(len(grid))) for j in range(len(grid)))
         
-        for i in range(len(grid)):
-            for j in range(len(grid)):
-                for k in range(len(grid)):
-                    ls_j.append(grid[k][j])
-                    
-                if grid[i] == ls_j:
-                    pair_count += 1
-                    
-                ls_j = []
-                    
-        return pair_count
+        
+        return sum(row_counter[key] * col_counter[key] for key in row_counter)
             
