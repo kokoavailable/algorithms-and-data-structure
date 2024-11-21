@@ -18,10 +18,10 @@ class Solution:
             dfs(node.left, node)
             dfs(node.right, node)
             
-            if parent.left == node and not node.left and not node.right:
+            if parent and parent.left == node and not node.left and not node.right:
                 total += node.val
                 
-        dfs(root, root)
+        dfs(root, None)
                 
         return total
             
