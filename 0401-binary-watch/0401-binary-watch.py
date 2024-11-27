@@ -4,9 +4,11 @@ class Solution:
         
         
         def backtrack(leds: int, hour:int, minute: int, idx: int):
+            if hour >= 12 or minute >= 60:
+                return  # 시간/분 범위를 벗어나면 중단
+            
             if leds == 0:
-                if hour < 12 and minute < 60:
-                    result.append(f"{hour}:{minute:02d}")
+                result.append(f"{hour}:{minute:02d}")
                 return
             
             for i in range(idx, 10):
@@ -18,4 +20,10 @@ class Solution:
         backtrack(turnedOn, 0, 0, 0)
         return result
             
+        result = []
+        
+        def backtrack(leds, hours, mins, idx):
+            if leds == 0:
+                if hours < 12 and minute < 60:
+                    result.append
             
