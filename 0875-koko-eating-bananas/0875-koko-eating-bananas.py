@@ -7,7 +7,7 @@ class Solution:
             cnt = 0
             
             for pile in piles:
-                cnt += (pile + mid -1) // mid
+                cnt += (pile + mid - 1) // mid
                 if cnt > h:
                     break
                 
@@ -15,6 +15,7 @@ class Solution:
                 left = mid + 1
             else:
                 right = mid
+                
 
         return left
                     
