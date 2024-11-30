@@ -17,4 +17,7 @@ class Solution:
                         count[i] += count[j]
                     
         max_length = max(length)
+        
         return sum(c for l, c in zip(length, count) if l == max_length)
+    
+        
