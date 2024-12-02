@@ -23,6 +23,5 @@ class Solution:
 
             return current_node  # 현재 노드 반환
         
-        listnode(l1, l2, 0)
-        
         return listnode(l1, l2, 0)
+    
