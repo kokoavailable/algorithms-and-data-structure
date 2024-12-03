@@ -9,4 +9,3 @@ class Solution:
             if max_reach >= len(nums) - 1:
                 return True
             
-        return False
