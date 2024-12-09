@@ -10,6 +10,7 @@ class Solution:
             elif p == '..':
                 if ls2:
                     ls2.pop()
+                    continue
             else: 
                 ls2.append(p)
             
