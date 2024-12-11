@@ -1,5 +1,6 @@
 class Solution:
     def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
+        # 총 가용 연료와 비용 확인
         total_tank = 0
         current_tank = 0
         start_index = 0
