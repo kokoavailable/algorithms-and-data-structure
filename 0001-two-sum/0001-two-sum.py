@@ -8,3 +8,4 @@ class Solution:
                 return [nums_dict[complement], i]
             nums_dict[num] = i
         
+        x = 10  # 전역 변수 (불변 객체)
