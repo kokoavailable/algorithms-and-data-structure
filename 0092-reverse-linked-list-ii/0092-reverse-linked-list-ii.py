@@ -12,11 +12,9 @@ class Solution:
         dummy.next = head
         prev = dummy
         
-        # Move `prev` to the node just before `left`
         for _ in range(left - 1):
             prev = prev.next
         
-        # Reverse the segment between `left` and `right`
         start = prev.next
         
         for _ in range(right - left):
