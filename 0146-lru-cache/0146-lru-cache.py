@@ -4,21 +4,23 @@ class LRUCache:
     __slots__ = ('data', 'capacity')
 
     def __init__(self, capacity: int):
-        self.data: Dict[int, int] = OrderedDict()
-        self.capacity: int = capacity
+        self.data = OrderedDict()
+        self.capacity = capacity
 
     def get(self, key: int) -> int:
-        return -1 if key not in self.data else self.data.setdefault(key, self.data.pop(key))
+        if key not in self.data:
+            return -1 
+
+        self.data.move_to_end(key)
+        return self.data[key]
 
     def put(self, key: int, value: int) -> None:
-        try:
-            self.data.move_to_end(key)
-            self.data[key] = value
-        except KeyError:
-            self.data[key] = value
-            if len(self.data) > self.capacity:
-                self.data.popitem(last=False)
-        
+        if key in self.data:  # 키가 있으면
+            self.data.move_to_end(key)  # 순서 업데이트
+        self.data[key] = value  # 값 추가/업데이트
+
+        if len(self.data) > self.capacity:  # 용량 초과 시 가장 오래된 항목 제거
+            self.data.popitem(last=False)
 
 
 # Your LRUCache object will be instantiated and called as such:
