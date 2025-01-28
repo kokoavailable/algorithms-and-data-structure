@@ -13,17 +13,15 @@ class Solution:
             return None
         
         visited = {}
-
-        def dfs(current_node):
-            if current_node in visited:
-                return visited[current_node]
-            
-            clone = Node(current_node.val)
-            visited[current_node] = clone
-
-            for neighbor in current_node.neighbors:
-                clone.neighbors.append(dfs(neighbor))
-            
-            return clone
+        queue = deque([node])
+        visited[node] = Node(node.val)
         
-        return dfs(node)
+        while queue:
+            current = queue.popleft()
+            for neighbor in current.neighbors:
+                if neighbor not in visited:
+                    visited[neighbor] = Node(neighbor.val)
+                    queue.append(neighbor)
+                visited[current].neighbors.append(visited[neighbor])
+        
+        return visited[node]
