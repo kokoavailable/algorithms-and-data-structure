@@ -3,7 +3,7 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
-
+# 중위순회
 def morris_traversal(root):
     node = root
     result = []
