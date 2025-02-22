@@ -30,3 +30,26 @@ def morris_traversal(root):
                 node = node.right  # 오른쪽 서브트리로 이동
 
     return result
+
+def morris_preorder(root):
+    node = root
+    result = []
+    
+    while node:
+        if not node.left:
+            result.append(node.val)  # 왼쪽 자식이 없을 때 방문 (Pre-order)
+            node = node.right
+        else:
+            predecessor = node.left
+            while predecessor.right and predecessor.right != node:
+                predecessor = predecessor.right
+                
+            if predecessor.right is None:
+                result.append(node.val)  # 스레드 생성할 때 방문 (Pre-order)
+                predecessor.right = node
+                node = node.left
+            else:
+                predecessor.right = None
+                node = node.right
+                
+    return result
