@@ -9,6 +9,7 @@ Algorithm
 - Graph (BFS, DFS)
 - DP (tabulation, memoization)
 - Backtracking
+- Morris traversal
 
 Data Structure
 --------------
