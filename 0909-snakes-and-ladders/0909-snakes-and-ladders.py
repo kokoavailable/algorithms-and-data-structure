@@ -23,6 +23,7 @@ class Solution(object):
                 s = next_step - 1
                 row = s // n
                 original_row = (n - 1) - row
+
                 col_in_row = s % n
                 row_from_bottom = row
                 if row_from_bottom % 2 == 0:
@@ -36,4 +37,5 @@ class Solution(object):
                 if next_step not in visited:
                     visited[next_step] = steps + 1
                     queue.append((next_step, steps + 1))
+
         return -1
