@@ -1,11 +1,9 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        nums_dict = {}
-        
-        for i, num in enumerate(nums):
-            complement = target - num
-            if complement in nums_dict:
-                return [nums_dict[complement], i]
-            nums_dict[num] = i
-        
-        x = 10  # 전역 변수 (불변 객체)
+        num_map = {}
+        for i in range(len(nums)):
+            complement = target - nums[i]
+            if complement in num_map:
+                return [num_map[complement], i]
+            num_map[nums[i]] = i
+        return []
