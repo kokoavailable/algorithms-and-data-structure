@@ -5,15 +5,6 @@
 #         self.next = next
 class Solution:
     def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        def reverse(start: ListNode, end: ListNode):
-            prev, curr = None, start
-            while curr != end:
-                tmp = curr.next
-                curr.next = prev
-                prev = curr
-                curr = tmp
-            return prev
-
         dummy = ListNode(0)
         dummy.next = head
         group_prev = dummy
