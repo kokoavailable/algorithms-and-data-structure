@@ -12,7 +12,7 @@ class Solution:
                 curr.next = prev
                 prev = curr
                 curr = tmp
-            return prev\
+            return prev
 
         dummy = ListNode(0)
         dummy.next = head
