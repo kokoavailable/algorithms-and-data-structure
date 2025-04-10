@@ -3,17 +3,15 @@ class Solution:
         if not matrix or not matrix[0]:
             return False
 
-        for row in matrix:
-            if row[0] <= target <= row[-1]:
-                left, right = 0, len(row) - 1
-                while left <= right:
-                    mid = (left + right) // 2
-                    if row[mid] == target:
-                        return True
-                    elif row[mid] < target:
-                        left = mid + 1
-                    else:
-                        right = mid - 1
+        row, col = len(matrix), len(matrix[0])
+        r, c = 0, col - 1
+
+        while r < row and c >= 0:
+            if matrix[r][c] == target:
+                return True
+            elif matrix[r][c] < target:
+                r += 1
+            else:
+                c -= 1
 
         return False
-        
