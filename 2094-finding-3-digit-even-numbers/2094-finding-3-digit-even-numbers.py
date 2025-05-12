@@ -6,7 +6,6 @@ class Solution:
         # 3. 세개를 조합한 숫자일 것.
         # 4. 조합해 append 해서 return
 
-        digits.sort()
         n = len(digits)
         result = []
 
