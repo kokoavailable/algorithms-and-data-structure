@@ -19,9 +19,4 @@ class Solution:
                     new_dp[i+1] = (new_dp[i+1] + dp[i]) % MOD
             dp = new_dp
 
-        result = 0
-        print(dp)
-        for ch in s:
-            result = (result + dp[ord(ch) - ord('a')]) % MOD
-
         return sum(dp) % MOD
