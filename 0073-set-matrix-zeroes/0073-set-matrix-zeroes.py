@@ -1,27 +1,25 @@
-class Solution(object):
-    def setZeroes(self, matrix):
+class Solution:
+    def setZeroes(self, matrix: List[List[int]]) -> None:
         """
-        :type matrix: List[List[int]]
-        :rtype: None Do not return anything, modify matrix in-place instead.
+        Do not return anything, modify matrix in-place instead.
         """
-        if not matrix:
-            return None
-        
+        # 중간 상태를 저장해놓고, 상태에 따라 전부 반영
+
         m = len(matrix[0])
         n = len(matrix)
-        
-        suspects = []
-        
+
+        zero = []
+
         for i in range(n):
             for j in range(m):
                 if matrix[i][j] == 0:
-                    suspects.append((i, j))
-        
-        for suspect in suspects:
-            x, y = suspect
-            for i in range(m):
-                matrix[x][i] = 0
-            for i in range(n):
-                matrix[i][y] = 0
-                
-        return matrix
+                    zero.append((i, j))
+
+
+        for i, j in zero:
+            for a in range(m):
+                matrix[i][a] = 0
+            for b in range(n):
+                matrix[b][j] = 0
+
+                    
