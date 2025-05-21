@@ -8,18 +8,23 @@ class Solution:
         m = len(matrix[0])
         n = len(matrix)
 
-        zero = []
+        zero_cols = set()
+        zero_rows = set()
 
         for i in range(n):
             for j in range(m):
                 if matrix[i][j] == 0:
-                    zero.append((i, j))
+                    zero_rows.add(i)
+                    zero_cols.add(j)
 
 
-        for i, j in zero:
-            for a in range(m):
-                matrix[i][a] = 0
-            for b in range(n):
-                matrix[b][j] = 0
+
+        for i in zero_rows:
+            for j in range(m):
+                matrix[i][j] = 0
+
+        for j in zero_cols:
+            for i in range(n):
+                matrix[i][j] = 0
 
                     
