@@ -1,7 +1,8 @@
 -- Write your PostgreSQL query statement below
 WITH cum_weights AS (
     SELECT
-        *,
+        person_name,
+        turn,
         SUM(weight) OVER (ORDER BY turn) AS cum_weight
     FROM
         Queue
