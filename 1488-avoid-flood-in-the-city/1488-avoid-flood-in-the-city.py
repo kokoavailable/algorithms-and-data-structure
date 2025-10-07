@@ -1,22 +1,21 @@
 class Solution:
     def avoidFlood(self, rains: List[int]) -> List[int]:
-        n = len(rains)
-        ans = [-1] * n
+        ans = [-1] * len(rains)
         dry = []
-        last = {}
+        visited = {}
 
         for i, lake in enumerate(rains):
             if lake == 0:
                 dry.append(i)
                 ans[i] = 1
             else:
-                if lake in last:
-                    j = bisect_right(dry, last[lake])
+                if lake in visited:
+                    j = bisect_right(dry, visited[lake])
                     if j == len(dry):
                         return []
                     use = dry.pop(j)
                     ans[use] = lake
-                last[lake] = i
+                visited[lake] = i
                 ans[i] = -1
-        
-        return ans
+
+        return ans 
