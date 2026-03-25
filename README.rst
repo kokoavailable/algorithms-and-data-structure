@@ -1,95 +1,85 @@
-2024 05 17 ~
-===========
+# Algorithm & Data Structures
 
-Algorithm
----------
-- Heap
-- Merge sort
-- Tree (BFS, DFS)
-- Graph (BFS, DFS)
-- DP (tabulation, memoization)
-- Backtracking
-- Morris traversal
+Problem solving practice in Go, Python, and SQL.
 
-Data Structure
---------------
+## Summary
 
-- List
-- LinkedList
-- Stack
-- Queue
-- Deque
-- Heap
-- Tree
-- Graph
-- Trie
+| Metric | Count |
+|--------|-------|
+| Total Problems | 279 |
+| Hard | 21 |
+| Medium | 165 |
+| Easy | 93 |
+| SQL | 37 |
 
+## Topics Covered
 
-Problem Solving
----------------
+**Data Structures:** Array, Linked List, Stack, Queue, Deque, Heap/Priority Queue, Hash Map, Tree (Binary, BST, N-ary, Quad), Graph, Trie
 
-- Programmers
-+-----------------------------------------------+--------------------------+-------------+------+
-| Problem                                       | Category                 | Difficulty  | Done |
-+===============================================+==========================+=============+======+
-| **N진수 게임**                                | Math, String             | Lv.2        | ✅   |
-+-----------------------------------------------+--------------------------+-------------+------+
-- HackerRank
-- LeetCode
-+-----------------------------------------------+----------------------+-------------+------+
-| Problem                                       | Category             | Difficulty  | Done |
-+===============================================+======================+=============+======+
-| **0017-letter-combinations-of-a-phone-number**| Backtracking         | Medium      | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0649-dota2-senate**                         | Queue                | Medium      | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0933-number-of-recent-calls**               | Queue                | Easy        | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0215-kth-largest-element-in-an-array**      | Heap / Priority Queue| Medium      | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **1448-count-good-nodes-in-binary-tree**      | Tree (DFS)           | Medium      | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0199-binary-tree-right-side-view**          | Tree (BFS)           | Medium      | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0104-maximum-depth-of-binary-tree**         | Tree (DFS)           | Easy        | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0872-leaf-similar-trees**                   | Tree (DFS)           | Easy        | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0841-keys-and-rooms**                       | Graph (DFS/BFS)      | Medium      | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **1926-nearest-exit-from-entrance-in-maze**   | Graph (BFS)          | Medium      | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **1456-maximum-number-of-vowels-in-a-substr** | Sliding Window       | Medium      | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0005-longest-palindromic-substring**        | DP - On Strings      | Medium      | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0139-word-break**                           | DP - On Strings      | Medium      | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0063-unique-paths-ii**                      | DP - StyleMatrix     | Medium      | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0120-triangle**                             | DP - StyleMatrix     | Medium      | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0064-minimum-path-sum**                     | DP - StyleMatrix     | Medium      | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0221-maximal-square**                       | DP - StyleMatrix     | Medium      | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0931-minimum-falling-path-sum**             | DP - StyleMatrix     | Medium      | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0062-unique-paths**                         | DP - StyleMatrix     | Medium      | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0740-delete-and-earn**                      | DP - Fibonacci Style | Medium      | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0198-house-robber**                         | DP - Fibonacci Style | Medium      | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0746-min-cost-climbing-stairs**             | DP - Fibonacci Style | Easy        | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0509-fibonacci-number**                     | DP - Fibonacci Style | Easy        | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **1137-n-th-tribonacci-number**               | DP - Fibonacci Style | Easy        | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0027-remove-element**                       | Two Pointers         | Easy        | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0088-merge-sorted-array**                   | Two Pointers         | Easy        | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
-| **0208-implement-trie-prefix-tree**           | Trie                 | Medium      | ✅   |
-+-----------------------------------------------+----------------------+-------------+------+
+**Algorithms:** Binary Search, Two Pointers, Sliding Window, BFS, DFS, Backtracking, Dynamic Programming (Fibonacci, Matrix, String, State Machine), Greedy, Divide & Conquer, Bit Manipulation, Monotonic Stack, Union Find, Topological Sort, Morris Traversal
+
+**SQL:** Joins, Window Functions, Subqueries, Aggregation, CTEs
+
+## Structure
+
+```
+├── algorithm/python/       # Algorithm implementations (merge sort, morris traversal, etc.)
+├── data_structure/python/  # Data structure implementations (trie, etc.)
+├── 0001-two-sum/           # LeetCode solutions (by problem number)
+├── ...
+└── 프로그래머스/            # Programmers (Korean OJ) solutions
+```
+
+## Notable Problems
+
+### Hard
+
+| # | Problem | Category |
+|---|---------|----------|
+| 4 | Median of Two Sorted Arrays | Binary Search |
+| 25 | Reverse Nodes in k-Group | Linked List |
+| 30 | Substring with Concatenation of All Words | Sliding Window, Hash Map |
+| 42 | Trapping Rain Water | Two Pointers, Stack |
+| 51 | N-Queens | Backtracking |
+| 52 | N-Queens II | Backtracking |
+| 68 | Text Justification | String, Simulation |
+| 72 | Edit Distance | DP |
+| 76 | Minimum Window Substring | Sliding Window |
+| 84 | Largest Rectangle in Histogram | Monotonic Stack |
+| 97 | Interleaving String | DP |
+| 124 | Binary Tree Maximum Path Sum | Tree, DFS |
+| 127 | Word Ladder | BFS |
+| 135 | Candy | Greedy |
+| 146 | LRU Cache | Hash Map, Linked List |
+| 149 | Max Points on a Line | Math, Hash Map |
+| 185 | Department Top Three Salaries | SQL, Window Functions |
+| 224 | Basic Calculator | Stack, Recursion |
+| 262 | Trips and Users | SQL, Joins |
+| 440 | K-th Smallest in Lexicographical Order | Trie (conceptual) |
+| 3335 | Total Characters in String After Transformations I | Simulation |
+
+### Selected Medium (representative)
+
+| # | Problem | Category |
+|---|---------|----------|
+| 3 | Longest Substring Without Repeating Characters | Sliding Window |
+| 46 | Permutations | Backtracking |
+| 56 | Merge Intervals | Sorting, Greedy |
+| 79 | Word Search | Backtracking |
+| 102 | Binary Tree Level Order Traversal | BFS |
+| 131 | Palindrome Partitioning | Backtracking, DP |
+| 200 | Number of Islands | DFS/BFS |
+| 207 | Course Schedule | Topological Sort |
+| 210 | Course Schedule II | Topological Sort |
+| 560 | Subarray Sum Equals K | Prefix Sum, Hash Map |
+| 647 | Palindromic Substrings | DP |
+| 739 | Daily Temperatures | Monotonic Stack |
+| 875 | Koko Eating Bananas | Binary Search |
+| 1268 | Search Suggestions System | Trie |
+| 2302 | Count Subarrays With Score Less Than K | Sliding Window |
+
+## Languages
+
+- **Go** — primary (LeetCode)
+- **Python** — algorithm/data structure implementations, selected problems
+- **SQL** — database problems (MySQL)
